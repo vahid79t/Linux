@@ -1,0 +1,21 @@
+
+
+##################### REDHAT ###############################################
+
+  dnf install firewalld
+  systemctl enable/disable/start/stop firewalld
+  firewall-cmd --state
+  firewall-cmd --list-all-zones
+  firewall-cmd --zone=public --add-port=5000/tcp --permanent
+  firewall-cmd --reload
+  firewall-cmd --zone=public --list-ports
+##################### DEB    ###############################################
+
+
+   apt install ufw
+   ufw enable / disable
+   ufw default deny incoming
+   ufw default allow outgoing
+   ufw allow ssh / ftp / http / ...
+   ufw status verbose
+   ufw delete allow ssh / ftp / http
