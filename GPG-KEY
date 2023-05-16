@@ -1,0 +1,11 @@
+ 
+ sudo apt-key list
+sudo apt-key del "D4CC 8597 4C31 396B 18B3  6837 D615 560B A5C7 FF72"
+
+ gpg --list-keys
+ gpg --list-secret-keys
+ gpg --delete-secret-key [uid]
+ gpg --delete-key [uid]
+ gpg --delete-key liza
+ gpg --delete-secret-key [Key_ID]
+ gpg --delete-secret-key 1B61835F2E64E1C62A9A4725F88BAB439C28653E
